@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Lecturer {
-    private
+    private final
     String employeeId;
     String fullName;
     int rank;

@@ -9,9 +9,10 @@ public class Project {
     Project(String nameProjectVal, long budgetVal){
         this.nameProject = nameProjectVal;
         this.budget= budgetVal;
-    };
-    void setHost(Lecturer host){
-        this.host = host;
+    }
+
+    void setHost(Lecturer newHost){
+        this.host = newHost;
     }
     void showInfo(){
         System.out.print("\nName of Course: " + nameProject + "\n Budget of Project: " + budget + "\nThe host of Project: " + host.fullName);
@@ -22,10 +23,14 @@ public class Project {
             for(Student stu : studentList){
                 stu.showInfor();
             }
-            System.out.print("\nList of Lecture: ");
+            System.out.print("List of Lecture: ");
             for(Lecturer lec : LecturerList){
                 lec.showInfo();
+                System.out.print("\n");
             }
+        }
+        else{
+            System.out.print("\nNothing here");
         }
     }
 }
